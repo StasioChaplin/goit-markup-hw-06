@@ -589,13 +589,16 @@ img {
 
 .subscribe-field {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-input {
   display: flex;
   width: 264px;
   height: 40px;
-  margin-right: 24px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background-color: transparent;
   border: 1px solid var(--nondescript-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -613,13 +616,13 @@ img {
 
 .subscribe-btn {
   display: flex;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
-  gap: 16px;
   border-radius: 4px;
+  font-family: var(--main-font);
   background-color: var(--primary-brand-color);
   font-weight: 500;
   font-size: 16px;
@@ -640,6 +643,7 @@ img {
 
 .send-icon {
   fill: var(--nondescript-color);
+  margin-left: 16px;
 }
 
 /* ======================== MODAL ======================== */
@@ -666,7 +670,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding: 72px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -674,13 +678,14 @@ img {
 }
 
 .modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   background-color: var(--border-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-left: auto;
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
